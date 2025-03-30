@@ -59,8 +59,9 @@ html {
         box-shadow: 0 0 7px #000 ;
 
         .header__icon {
-            font-size: 4rem ;
-            color: $white-color ;
+            width: 4rem ;
+            height: 4rem ;
+            fill: $white-color ;
             cursor: pointer ;
         }        
         
@@ -76,7 +77,7 @@ html {
 
         .header__icon--menu:hover,
         .header__icon--cart:hover {
-            color: var(--red) ;
+            fill: var(--red) ;
         }
     }
 
@@ -204,11 +205,12 @@ html {
             }
             
             .cart__icon {
-                font-size: 2rem ;
+                width: 2rem ;
+                height: 2rem ;
                 margin-left: 1rem ;
                 cursor: pointer ;
                 &:hover {
-                    color: var(--red) ;
+                    fill: var(--red) ;
                 }
             }
         }
@@ -300,19 +302,18 @@ html {
         transition: all 500ms ease-in-out ;
         z-index: 3 ;
 
-        /*-- ↓ CLASE PARA MOSTRAR MENÚ ↓ 
-        .showAsideMenu {
-            transform: translateX(0%) ;
-        } --*/
-
         .aside-menu__title-closelogo {
             @include display-j-content(flex, space-between, center, row) ;
             margin-bottom: 2rem ;
-            h3, ion-icon {
+            h3 {
                 font-size: 2.6rem ;
             }
-            ion-icon:hover {
-                color: var(--red) ;
+            .close-icon {
+                width: 3rem ;
+                height: 3rem ;
+            }
+            .close-icon:hover {
+                fill: var(--red) ;
                 cursor: pointer ;
             }
         }

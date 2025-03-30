@@ -1,6 +1,6 @@
 const asideMenu = document.querySelector('.aside-menu__container') ,
-    menuLogo = document.querySelector('.header__icon--menu') ,
-    closeAside = document.querySelector('.close-icon') ;
+    menuLogo = document.querySelector('.header__icon--menu path') ,
+    closeAside = document.querySelector('.close-icon path') ;
 
 /* ¿Por qué no funciona?  ↓↓ 
 asideMenu.classList.toggle('showAsideMenu') */

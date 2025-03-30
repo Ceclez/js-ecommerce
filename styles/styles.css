@@ -44,8 +44,9 @@ html .header__nav-list {
   box-shadow: 0 0 7px #000;
 }
 html .header__nav-list .header__icon {
-  font-size: 4rem;
-  color: #fff;
+  width: 4rem;
+  height: 4rem;
+  fill: #fff;
   cursor: pointer;
 }
 html .header__nav-list .header__logo {
@@ -59,7 +60,7 @@ html .header__nav-list .header__logo:hover {
 }
 html .header__nav-list .header__icon--menu:hover,
 html .header__nav-list .header__icon--cart:hover {
-  color: var(--red);
+  fill: var(--red);
 }
 html .header__background-container {
   background-image: url(../img/converse-background-image-2.jpg);
@@ -178,12 +179,13 @@ html .cart__container .cart__article h4, html .cart__container .cart__article p 
   font-size: 1.6rem;
 }
 html .cart__container .cart__article .cart__icon {
-  font-size: 2rem;
+  width: 2rem;
+  height: 2rem;
   margin-left: 1rem;
   cursor: pointer;
 }
 html .cart__container .cart__article .cart__icon:hover {
-  color: var(--red);
+  fill: var(--red);
 }
 html .cart__num-elements {
   position: fixed;
@@ -268,10 +270,6 @@ html .aside-menu__container {
   transform: translateX(-102%);
   transition: all 500ms ease-in-out;
   z-index: 3;
-  /*-- ↓ CLASE PARA MOSTRAR MENÚ ↓ 
-  .showAsideMenu {
-      transform: translateX(0%) ;
-  } --*/
 }
 html .aside-menu__container .aside-menu__title-closelogo {
   display: flex;
@@ -280,11 +278,15 @@ html .aside-menu__container .aside-menu__title-closelogo {
   flex-direction: row;
   margin-bottom: 2rem;
 }
-html .aside-menu__container .aside-menu__title-closelogo h3, html .aside-menu__container .aside-menu__title-closelogo ion-icon {
+html .aside-menu__container .aside-menu__title-closelogo h3 {
   font-size: 2.6rem;
 }
-html .aside-menu__container .aside-menu__title-closelogo ion-icon:hover {
-  color: var(--red);
+html .aside-menu__container .aside-menu__title-closelogo .close-icon {
+  width: 3rem;
+  height: 3rem;
+}
+html .aside-menu__container .aside-menu__title-closelogo .close-icon:hover {
+  fill: var(--red);
   cursor: pointer;
 }
 html .aside-menu__container ul {

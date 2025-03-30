@@ -1,6 +1,6 @@
 /*---- Lógica para mostrar el carrito ↓↓ ----*/
 
-const cartIcon = document.querySelector('.header__icon--cart') ;
+const cartIcon = document.querySelector('.header__icon--cart path') ;
 const cartMenu = document.querySelector('.cart__container') ;
     // burbuja con número de productos en carrito 
 let cartMessageNum = document.querySelector('.cart__quantity') ;
@@ -88,5 +88,8 @@ onChange.observe(cartMessageNum, config) ; // 1er parámetro: elemento en que se
 /*---- mostrar la cantidad de productos en el carrito desde la primera carga del sitio ↓↓ ----*/
 cartMessageNum.innerHTML = productsInCart.length ;
 
-/* funcionalidad personal: hacer que cuando se dé clic al logo de converse, se modifique 
-   la variable $red a un color aleatorio hexadecimal */
+/* PENDIENTE LO SIGUIENTE...
+1. Actualmente, cuando un producto se añade varias veces, se repite en la lista en lugar de incrementar su cantidad. Para mejorar la experiencia del usuario, lo ideal sería que, si un producto ya está en el carrito, solo aumente el número de unidades en lugar de duplicarlo.
+2. Cuando el carrito tiene varios productos, podría volverse muy largo. Para evitar esto, sería recomendable agregar un scroll al carrito y definir una altura máxima. Esto asegurará que el diseño se mantenga limpio y fácil de usar.
+3. Considera incluir una opción para vaciar todo el carrito de una vez, lo que puede ser útil para los usuarios. 
+*/
